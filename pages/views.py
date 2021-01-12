@@ -3,5 +3,8 @@ from django.http import HttpResponse
 
 
 def index(req):
-    return HttpResponse('<h1>hello</h1>')
+    return render(req ,'pages/index.html')
 
+
+def about(req):
+    return render(req ,'pages/about.html')
